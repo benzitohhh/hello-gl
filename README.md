@@ -8,3 +8,12 @@ GLEW <http://glew.sourceforge.net/> libraries to compile this program. It also
 requires OpenGL 2.0 or later.
 
 Do whatever you like with this source code.
+
+
+## To install on OSX
+
+1. `brew install glew`
+
+2. `make clean; make; ./hello-gl`
+
+i.e. `Makefile` is a symlink to `Makefile.MacOSX`
