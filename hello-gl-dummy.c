@@ -17,13 +17,16 @@ static int make_resources(void)
  */
 static void update_fade_factor(void)
 {
+    // This is called continuously by glut...
+    //printf("glutIdleFunc -> update_fade_factor()\n");
 }
 
 static void render(void)
 {
+    // This is called once by glut...
+    //printf("glutDisplayFunc -> render()\n");
     glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
-
     glutSwapBuffers();
 }
 
@@ -53,4 +56,3 @@ int main(int argc, char** argv)
     glutMainLoop();
     return 0;
 }
-
