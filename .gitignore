@@ -1,3 +1,21 @@
+#### Ignore all files with no extension
+*
+!/**/
+!*.*
+!Makefile
+!makefile
+#######################################
+
+.DS_STORE
+book
+*.exe
 *.o
-hello-gl
-hello-gl-dummy
+*~
+*.stackdump
+TAGS
+*.dSYM
+*.so
+*.a
+*.log
+*.s
+.dir-locals.el
